@@ -40,3 +40,4 @@ Route::domain('{subdomain}.localhost')->middleware(['tenant', 'auth'])->group(fu
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
